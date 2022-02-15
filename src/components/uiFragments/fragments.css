@@ -1,0 +1,27 @@
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  padding: 15px 25px;
+  border: 1px solid #ffffff;
+  font-family: inter;
+}
+
+.search-wrapper input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-family: inter;
+}
+.search-wrapper input:focus {
+  outline: none;
+}
+
+.btn {
+    padding: 5px 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+  }
+  
