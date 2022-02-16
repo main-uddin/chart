@@ -1,12 +1,11 @@
-import phone from "../../images/image.png";
 import "./PhoneModel.css";
-const PhoneModel = () => {
+const PhoneModel = ({ image, brand, model }) => {
   return (
-    <div>
-      <img src={phone} alt="" />
+    <div className="model-wrapper">
+      <img src={image} alt="" />
       <div>
-        <div>Samsung Galaxy S22</div>
-        <div>Samsung</div>
+        <div className="phone-model">{model}</div>
+        <div className="phone-brand">{brand}</div>
       </div>
     </div>
   );

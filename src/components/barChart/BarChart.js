@@ -45,7 +45,7 @@ const BarChart = () => {
       {
         label: "",
         data: [...conditions],
-        backgroundColor: ["#00FF00", "#FFFF00", "#FF00FF", "#FFC0CB"],
+        backgroundColor: "#0095A0",
       },
     ],
   };

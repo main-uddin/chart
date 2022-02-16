@@ -4,3 +4,16 @@ html {
   padding: 0;
   margin: 0;
 }
+
+/* .App {
+} */
+
+.container {
+  margin-top: 100px;
+  padding: 0 200px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-around;
+}

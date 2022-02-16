@@ -18,6 +18,8 @@ export const Button = ({ value, color, background }) => {
         color: color,
         border: `0.5px solid ${color}`,
         background: background,
+        marginRight: "10px",
+        height: "26px",
       }}
     >
       {value}
