@@ -55,7 +55,7 @@ const Item = ({ data }) => {
           />
         )}
       </div>
-      <p style={{ textAlign: "right" }}>{phone_price}</p>
+      <p className="grid-body__price">{phone_price}</p>
     </div>
   );
 };

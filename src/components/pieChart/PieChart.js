@@ -50,5 +50,3 @@ const PieChart = () => {
 };
 
 export default PieChart;
-
-// sources?.bikroy, sources?.daraz, sources?.pickaboo

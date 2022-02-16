@@ -7,7 +7,6 @@ import "./item.css";
 import { bestCamera, bestPerformance, bestValue } from "../../utils";
 import DropDown from "../dropDown/DropDown";
 const ItemList = () => {
-  const allPhones = dataSet.slice();
   const [sliceValue, setSliceValue] = useState({ start: 0, end: 20 });
   const [phones, setPhones] = useState([]);
 
@@ -19,15 +18,17 @@ const ItemList = () => {
   useEffect(() => {
     if (isVisible) {
       setTimeout(() => {
-        setSliceValue({ start: sliceValue?.end, end: sliceValue?.end + 20 });
+        setSliceValue((prevState) => {
+          return { start: prevState?.end, end: prevState?.end + 20 };
+        });
       }, 1000);
     }
   }, [isVisible]);
 
   useEffect(() => {
     const { start, end } = sliceValue;
-    const cpData = allPhones.slice(start, end);
-    setPhones([...phones, ...cpData]);
+    const cpData = dataSet.slice(start, end);
+    setPhones((prevState) => [...prevState, ...cpData]);
     if (!cpData?.length) {
       setIsLoadMore(false);
     }
