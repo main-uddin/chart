@@ -59,6 +59,7 @@ const ItemList = () => {
         }
       }
     );
+    setIsLoadMore(false);
     setPhones([...fdata]);
   };
 
